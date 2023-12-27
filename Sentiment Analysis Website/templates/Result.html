@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis Result</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            background-image: url(https://t3.ftcdn.net/jpg/06/36/89/58/360_F_636895864_VNNRtMdGhefLrUiuU0RSfYx7odu8IgQz.jpg);
+            background-size: cover;
+            background-blend-mode: normal;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            max-width: 400px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            transform: translateY(-20px);
+            animation: fadeInUp 0.5s ease-out forwards;
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 20px;
+            opacity: 0;
+            transform: translateY(-20px);
+            animation: fadeInUp 0.5s ease-out 0.2s forwards;
+        }
+
+        p {
+            color: #34495e;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .result-text {
+            font-weight: bold;
+            font-size: 18px;
+            color: #3498db;
+        }
+
+        .go-back {
+            display: block;
+            color: #fff;
+            background-color: #3498db;
+            padding: 10px;
+            border-radius: 4px;
+            text-align: center;
+            text-decoration: none;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .go-back:hover {
+            background-color: #2980b9;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sentiment Analysis Result</h1>
+        <p>User Input: <span class="result-text">{{ user_input }}</span></p>
+        <p>Predicted Sentiment: <span class="result-text">{{ prediction }}</span></p>
+        <a href="/" class="go-back">Go back to input</a>
+    </div>
+</body>
+</html>
