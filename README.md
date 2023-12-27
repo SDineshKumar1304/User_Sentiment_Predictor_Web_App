@@ -30,7 +30,7 @@ The sentiment analysis model is deployed using a Flask web application. The Flas
 The web interface is designed using HTML and CSS to create a visually appealing and intuitive user experience. The structure and styles are defined in the `templates` and `static` directories, respectively.
 ## Sql Database 
 
-The Sql Database is created for Registration form
+The Sql Database is created for Registration form in the flask
 ## Dependencies
 
 To run the Flask application and interact with the sentiment analysis model, ensure you have the required dependencies installed. You can install them using the following command:
