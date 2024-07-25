@@ -1,4 +1,4 @@
-## Hello Everyone My Name is S.Dinesh Kumar This My First Website by Integrating the trained Machine Learning model and Classify Predictions 
+## Hello Everyone My Name is S.Dinesh Kumar This My First Website by Integrating the trained Machine Learning model and Classications 
 
 # Sentiment Analysis with Manually Collected Data and Flask Integration
 
